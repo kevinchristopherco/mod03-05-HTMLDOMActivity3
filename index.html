@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>DOM Activity 3</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Roboto font from google fonts: search for Roboto, click on plus sign, click on Family Selected, copy link for html only-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+ <!--id should be unique in a page, but class does not have to be unique-->
+ <!--classes are used to places where code is similar-->
+ <!--classes can be descriptive, but should be all in lower camel case -->
+   <div class="container">
+     <header>
+       <h1>TUITT CODING BOOTCAMP</h1>
+     </header>
+     <main>
+        <div class="main-dashboard">
+           <!--i tag with class can contain the font awesome tags-->
+           <h3 class="inline-blocked"><i class='fas fa-tachometer-alt'></i>Dashboard</h3>
+           
+           <div class="dashboard-thumbnail">
+               <div id="post-circle" class="dashboard-circles">
+                   <!--add fa-2x after 'file' to resize-->
+                   <i class="fas fa-file"></i>
+               </div>
+               <div class="inline-blocked">
+                   <p class="dashboard-text">5</p>
+                   <p class="dashboard-text">posts</p>
+               </div>
+            </div>
+            <!-- end of first dashboard thumbnail -->
+            <div class="dashboard-thumbnail">
+                 <div id="image-circle" class="dashboard-circles">
+                     <i class="fas fa-images"></i>                
+                 </div>
+                 <div class="inline-blocked">
+                    <p class="dashboard-text">13</p>
+                    <p class="dashboard-text">images</p>
+                  </div>
+            </div>
+            <!-- end of second dashboard thumbnail-->
+        </div>
+        <!-- end of main dashboard -->
+        <div class="new post">
+            <h3><i class="fas fa-plus-circle"></i>New Post</h3>
+
+            <form class="hide-overflow" method="" action="">
+               <input id="post-title" type="test" name="post"
+               placeholder="Enter your post title">
+               <input id="post-content" type="text" name="content" 
+               placeholder="Enter your post content here">
+               <button id="btn-publish" class="btn btn-blue" type="submit" name="button">Publish</button>
+            </form>
+        </div>
+        <!-- end of new post -->
+        <div class="gallery">
+           <h3><i class="fas fa-cloud-upload-alt"></i>
+           Upload Image</h3>
+           <div class="img-set-holder">
+              <!--Go to lorem pixel to get place holder images and copy the custom url-->
+              <img class="img-set" src="http://lorempixel.com/400/200" alt="describe the image">
+              <img class="img-set" src="http://lorempixel.com/400/200" alt="describe the image">
+              <img class="img-set" src="http://lorempixel.com/400/200" alt="describe the image">
+              <img class="img-set" src="http://lorempixel.com/400/200" alt="describe the image">
+              <img class="img-set" src="http://lorempixel.com/400/200" alt="describe the image">
+           </div>
+        <form class="hide-overflow" method="" action="">
+            <button id="btn-browse" class="btn btn-red">Browse</button>
+            <button id="btn-upload" class="btn btn-green">Upload</button>
+        </form>
+       </div>
+       <!-- end of gallery -->
+     </main>
+     <footer>
+        <p>Tuitt Coding Bootcamp &copy; 2018</p>
+     </footer>
+   
+</body>
+</html>
